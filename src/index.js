@@ -3,9 +3,9 @@ import cors from "cors";
 import dotenv from "dotenv";
 import emailRoutes from "./routes/emailRoutes.js";
 
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
-dotenv.config();
 
 app.use(express.json());
 app.use(cors());
